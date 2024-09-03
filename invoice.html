@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="invoice-container">
+        <!-- Top Section with Logo and Details -->
+        <div class="invoice-header">
+            <div class="left-section">
+                <h2>Invoice</h2>
+                <p><strong>Invoice Number:</strong> INV123456</p>
+                <p><strong>Date:</strong> 2021-08-31</p>
+            </div>
+           
+        </div>
+
+        <!-- Billing Information Section with Ownership Details Container -->
+        <div class="billing-info">
+            <div class="bill-to">
+                <h3>Bill To</h3>
+                <p><strong>Name:</strong> Sally Harley</p>
+                <p><strong>Account Number:</strong> 123456789</p>
+                <p><strong>Phone Number:</strong> +1234567890</p>
+            </div>
+            <!-- Ownership Details Container -->
+            <div class="info-container">
+                <div class="logo-details">
+                    <img src="logo.png" alt="Company Logo" class="company-logo-small">
+                </div>
+                <div class="ownership-details">
+                    <h3>Ownership Details</h3>
+                    <p><strong>Name:</strong> Zoonoodle Inc</p>
+                    <p><strong>Address:</strong> 21023 Pearson Point Road, Gateway Avenue</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Invoice Details Section -->
+        <div class="invoice-details">
+            <p><strong>Pay Period:</strong> August 2021</p>
+            <p><strong>Ref #:</strong> REF789456</p>
+            <p><strong>Total Amount:</strong> ₹9500</p>
+        </div>
+
+        <!-- Invoice Table with GST -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span>10000</td>
+                </tr>
+                <tr>
+                    <td>Incentive Pay</td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span>1000</td>
+                </tr>
+                <tr>
+                    <td>House Rent Allowance</td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span>400</td>
+                </tr>
+                <tr>
+                    <td>Meal Allowance</td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span>200</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Earnings</strong></td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span>11600</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Deductions</strong></td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span>2100</td>
+                </tr>
+                <tr>
+                    <td><strong>GST Rate (18%)</strong></td>
+                    <td class="amount-cell">18%</td>
+                </tr>
+                <tr>
+                    <td><strong>Net Pay</strong></td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span>9500</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Notes and Terms Section -->
+        <div class="notes-terms">
+            <h3>Notes</h3>
+            <p>This invoice is generated based on the provided payslip data.</p>
+
+            <h3>Terms and Conditions</h3>
+            <p>Payment due within 30 days of invoice date. Late payments may incur additional fees.</p>
+        </div>
+
+        <!-- Action Icons Section -->
+        <div class="action-icons">
+            <a href="#" id="download-link" title="Download Invoice">
+                <img src="icons/download-icon.png" alt="Download">
+            </a>
+            <a href="#" id="share-link" title="Share Invoice">
+                <img src="icons/share-icon.png" alt="Share">
+            </a>
+            <a href="#" id="copy-link" title="Copy Link">
+                <img src="icons/copy-link-icon.png" alt="Copy Link">
+            </a>
+        </div>
+    </div>
+    <!-- Back Arrow Button -->
+    <a href="payslip.html" class="back-arrow">
+        <img src="path/to/arrow-icon.png" alt="Back">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

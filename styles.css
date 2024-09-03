@@ -1,0 +1,520 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.payslip-container {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.header p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.employee-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.employee-details div {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+.currency-symbol {
+    font-size: 14px;
+    color: #333;
+    margin-right: 2px;
+}
+
+.percentage-symbol {
+    font-size: 14px;
+    color: #333;
+    margin-left: 2px;
+}
+
+.amount-cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gst-details-box {
+    padding: 0;
+    border: none;
+}
+
+.gst-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.gst-detail {
+    display: flex;
+    align-items: end;
+    margin: 5px 5px;
+    width: 95%;
+    justify-content: space-between;}
+
+.gst-label {
+    margin-right: 10px;
+    align-content: end;
+}
+
+.gst-value {
+    display: flex;
+    align-items: center;
+}
+
+.gst-separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.alternate-row {
+    background-color: #f9f9f9;
+}
+
+.net-pay-row {
+    background-color: #e0f7fa;
+    font-weight: bold;
+}
+
+.net-pay {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.net-pay p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #2b2c2c; /* Distinct color for Net Pay */
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.signatures div {
+    width: 45%;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    font-style: italic;
+}
+
+.invoice-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00796b; /* Button color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.invoice-container {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-section {
+    text-align: left;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.billing-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bill-to, .ownership-details {
+    width: 45%;
+}
+
+.invoice-details {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.amount-cell {
+    text-align: right;
+}
+
+.notes-terms {
+    margin-top: 20px;
+}
+
+.notes-terms h3 {
+    margin-bottom: 5px;
+}
+
+.action-buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-buttons button:hover {
+    background-color: #004d40;
+}
+/* Common Styles */
+.invoice-container {
+    position: relative;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section h2 {
+    margin: 0;
+}
+
+.company-logo {
+    width: 100px;
+}
+
+.billing-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.ownership-details, .logo-details {
+    margin-right: 20px;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    margin-right: 10px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Add more styling as needed */
+}
+/* Common Styles */
+.invoice-container {
+    position: relative;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section h2 {
+    margin: 0;
+}
+
+.company-logo {
+    width: 150px;
+}
+
+.billing-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-details {
+    margin-right: 20px;
+}
+
+.company-logo-small {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.ownership-details {
+    /* Adjust as needed */
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    margin-right: 10px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Add more styling as needed */
+}
+/* Common Styles */
+.invoice-container {
+    position: relative;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section h2 {
+    margin: 0;
+}
+
+
+
+.billing-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-details {
+    margin-right: 20px;
+}
+
+.company-logo-small {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ownership-details {
+    /* Adjust as needed */
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    margin-right: 10px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Add more styling as needed */
+}
+/* Common Styles */
+.invoice-container {
+    position: relative;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section h2 {
+    margin: 0;
+}
+
+.company-logo {
+    width: 100px;
+}
+
+.billing-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-details {
+    margin-right: 20px;
+}
+
+.company-logo-small {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.ownership-details {
+    /* Adjust as needed */
+}
+
+.action-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.action-icons a {
+    margin-left: 10px;
+}
+
+.action-icons img {
+    width: 75px;
+    height: 75px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Add more styling as needed */
+}
+

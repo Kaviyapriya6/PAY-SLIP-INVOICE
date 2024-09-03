@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payslip-container">
+        <div class="header">
+            <h2>Payslip</h2>
+            <p>Zoonoodle Inc</p>
+            <p>21023 Pearson Point Road<br>Gateway Avenue</p>
+        </div>
+        
+        <div class="employee-details">
+            <div>
+                <p>Date of Joining : 2018-06-23</p>
+                <p>Pay Period : August 2021</p>
+                <p>Worked Days : 26</p>
+            </div>
+            <div>
+                <p>Employee Name : Sally Harley</p>
+                <p>Designation : Marketing Executive</p>
+                <p>Department : Marketing</p>
+            </div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Earnings</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span><input type="number" id="basic" value="10000" oninput="calculatePayslip()"></td>
+                </tr>
+                <tr>
+                    <td>Incentive Pay</td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span><input type="number" id="incentive" value="1000" oninput="calculatePayslip()"></td>
+                </tr>
+                <tr>
+                    <td>House Rent Allowance</td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span><input type="number" id="hra" value="400" oninput="calculatePayslip()"></td>
+                </tr>
+                <tr>
+                    <td>Meal Allowance</td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span><input type="number" id="meal" value="200" oninput="calculatePayslip()"></td>
+                </tr>
+
+                <!-- GST details row -->
+                <tr class="gst-row">
+                    <td><strong>GST Details</strong></td>
+                    <td class="gst-details-box">
+                        <div class="gst-details">
+                            <div class="gst-detail">
+                                <span class="gst-label">SGST</span>
+                                <div class="gst-value">
+                                    <input type="number" id="sgst" value="4.5" oninput="calculatePayslip()" step="0.1">
+                                    <span class="percentage-symbol">%</span>
+                                </div>
+                            </div>
+                            <hr class="gst-separator">
+                            <div class="gst-detail">
+                                <span class="gst-label">CGST</span>
+                                <div class="gst-value">
+                                    <input type="number" id="cgst" value="4.5" oninput="calculatePayslip()" step="0.1">
+                                    <span class="percentage-symbol">%</span>
+                                </div>
+                            </div>
+                            <hr class="gst-separator">
+                            <div class="gst-detail">
+                                <span class="gst-label"><strong>Total GST Rate</strong></span>
+                                <div class="gst-value">
+                                    <input type="number" id="gst-rate" value="9" oninput="calculatePayslip()" step="0.1">
+                                    <span class="percentage-symbol">%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr class="alternate-row">
+                    <td><strong>Total Earnings</strong></td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span><span id="total-earnings">11600</span></td>
+                </tr>
+                <tr class="alternate-row">
+                    <td><strong>Total Deductions</strong></td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span><span id="total-deductions">2100</span></td>
+                </tr>
+                <tr class="net-pay-row">
+                    <td><strong>Net Pay</strong></td>
+                    <td class="amount-cell"><span class="currency-symbol">₹</span><span id="net-pay">9500</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="signatures">
+            <div>Employer Signature</div>
+            <div>Employee Signature</div>
+        </div>
+        
+        <div class="footer">
+            <p>This is a system-generated payslip</p>
+        </div>
+        
+        <!-- Button to Generate Invoice -->
+        <div class="invoice-button">
+            <a href="invoice.html" class="button">Generate Invoice</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
